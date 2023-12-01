@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfil del Orientador Educativo</title>
+</head>
+<body>
+
+<h1>Perfil del Orientador Educativo</h1>
+
+<div>
+  <h2>Información del Orientador</h2>
+  <p><strong>Nombre:</strong> Juan Pérez</p>
+  <p><strong>Ciudad:</strong> Arequipa</p>
+  <p><strong>Contacto:</strong> correo@example.com</p>
+  <p><strong>Whatsapp:</strong> 927642352</p>
+</div>
+
+<div>
+  <h2>Servicios</h2>
+  <p>Proporciono información sobre centros educativos y carreras disponibles en la ciudad.</p>
+  <p>Ofrezco asesoramiento y puedo pactar citas con estudiantes para proporcionar informes detallados.</p>
+</div>
+
+<div>
+  <h2>Calificación de Confianza</h2>
+  <p>¿Consideras confiable a Juan Pérez como orientador educativo?</p>
+  
+  <form action="/calificar" method="post">
+    <label for="confiabilidad_si">Sí</label>
+    <input type="radio" id="confiabilidad_si" name="confiabilidad" value="si">
+    
+    <label for="confiabilidad_no">No</label>
+    <input type="radio" id="confiabilidad_no" name="confiabilidad" value="no">
+    
+    <br><br>
+    <label for="razon">Comentarios adicionales (opcional):</label><br>
+    <textarea id="razon" name="razon" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+</body>
+</html>

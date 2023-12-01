@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Logros Perú</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/script.js"></script>
+</head>
+<body class="index">
+    <header>
+        <div class="container">
+            <a href="/">
+                <img src="/images/logomanzanalibro.png" alt="Logros Perú" style="width: 50px; height: 50px; margin-left: 50px;">
+            </a>
+            <nav>
+                <a href="#"><strong>Universidades</strong></a>
+                <a href="#"><strong>Institutos</strong></a>
+                <a href="#"><strong>Cetpros</strong></a>
+                <a href="#"><strong>Academias</strong></a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="masDropdown" data-target="masMenu">
+                        <b>Más</b>
+                    </a>
+                    <div class="dropdown-menu" id="masMenu">
+                        <a class="dropdown-item" href="#">Colegio</a>
+                        <a class="dropdown-item" href="#">Escuela</a>
+                        <a class="dropdown-item" href="#">Militar</a>
+                        <a class="dropdown-item" href="#">Orientadores</a>
+                        <a class="dropdown-item" href="#">Test vocacional</a>
+                        <a class="dropdown-item" href="#">Ayuda</a>
+                    </div>
+                </div>
+                <a href="registrodeusuario.html" class="login-link">Iniciar sesion</a>
+                <a href="miperfil.html" class="miperfil-link">Mi perfil</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="masDropdown" data-target="masMenu">
+                        <b>País</b>
+                    </a>
+                    <div class="dropdown-menu" id="masMenu">
+                        <a class="dropdown-item" href="#">Peru</a>
+                        <a class="dropdown-item" href="#">chile</a>
+                        <a class="dropdown-item" href="#">Argentina</a>
+                        <a class="dropdown-item" href="#">EEUU</a>
+                        <a class="dropdown-item" href="#">Alemania</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <h1><center>Buscar centros de estudio</center></h1>
+
+    <div class="containerone">
+        <form action="/submit_centro_info" method="post" class="form-inline">
+          <div class="form-group">
+            <label for="Categoria">Categoria</label>
+            <select name="categoria" id="categoria">
+                <option value="publica">Universidades</option>
+                <option value="publica">Institutos</option>
+                <option value="privada">Pedagogico</option>
+                <option value="privada">Cetpros</option>
+                <option value="publica">Academias</option>
+                <option value="publica">Centros de idioma</option>
+                <option value="publica">Militar</option>
+                <option value="publica">Orientadores</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-gestion">Tipo gestion</label>
+            <select name="tipo-gestion" id="tipo-gestion">
+                <option value="publica">Pública</option>
+                <option value="privada">Privada</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="nombre-centro">Nombre del centro</label>
+            <input type="text" name="nombre-centro" id="nombre-centro">
+          </div>
+      
+          <div class="form-group">
+            <label for="ciudad">Ciudad</label>
+            <input type="text" name="ciudad" id="ciudad">
+          </div>
+      
+          <div class="form-group">
+            <button type="submit">Buscar</button>
+         </div>
+        </form>
+      </div>
+  <main>
+
+    <section class="centros">
+      <h4>Ejemplo de resultados si buscan centros</h4>
+      <ul class="lista-centros">
+        <li><a href="centros.html">Universidad Nacional de Sang Agustín</a></li>
+        <li><a href="centros.html">Universidad Nacional de Ingeniería</a></li>
+        <li><a href="centros.html">Universidad Nacional de Trujillo</a></li>
+        <li><a href="centros.html">Universidad Nacional de la Amazonía Peruana</a></li>
+        <li><a href="centros.html">Universidad Nacional del Altiplano</a></li>
+      </ul>
+    </section>
+    <section class="orientador">
+      <h4>Ejemplo de resultados si buscan Orientador</h4>
+      <ul class="lista-orientadores">
+        <li><a href="perfilorientador.html">Juan Perez Ramirez</a></li>
+        <li><a href="perfilorientador.html">Italo Gomez Camargo</a></li>
+        <li><a href="perfilorientador.html">Maria Marinez Aguilar</a></li>
+        <li><a href="perfilorientador.html">Angelica Garcia Roberto</a></li>
+        <li><a href="perfilorientador.html">Lisbet Felix Cuadros</a></li>
+      </ul>
+    </section>      
+    
+  </main>
+  <footer>
+    <div class="container">
+      <p>Logros Perú, 2023</p>
+      <ul>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Aviso legal</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

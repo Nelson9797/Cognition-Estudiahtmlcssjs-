@@ -1,0 +1,241 @@
+body.index {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000000;
+    color: #fff;
+    height: 60px;
+    padding: 15px;
+  }
+  
+  header img {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  nav {
+    float: right;
+    margin-right: 30px;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    margin-top:10px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  section {
+    margin-top: 20px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    background-color: #eee;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    height: 60px;
+    padding: 15px;
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 0;
+  }
+ 
+/*Codigo para el menu desplegable de más, en la cabecera de index*/
+/* Estilos del menú desplegable */
+/* Ocultar el menú desplegable por defecto */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute; /* Posición absoluta con respecto al botón "más" */
+    top: 100%; /* Se alinea con la parte inferior del botón */
+    left: 50%; /* Centra el menú desplegable con respecto al botón */
+    transform: translateX(-50%); /* Ajusta la posición para centrar horizontalmente */
+    border-radius: 10px;
+
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/*Codigo para distingir ingresar registrate*/
+.login-link,
+.miperfil-link {
+    /* Estilos para los enlaces Ingresa y Regístrate */
+    color: rgb(111, 111, 124); /* Cambia el color del texto */
+    font-weight: bold; /* Añade negrita al texto */
+}
+
+/*poner imagen de fondo a mi aplicación web*/
+body.index{
+    background-image: url('/images/fondonode.jpeg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-attachment: fixed; /* Opcional: fija la imagen de fondo */
+}
+
+/* Lo que sigue es para dar forma bonito al formulario*/
+/* Estilos para el contenedor del formulario */
+.containerone {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .form-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(172, 172, 172);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  button {
+    padding: 7px;
+    margin: 5px;
+    border-radius: 4px;
+    
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:20px;
+    font-size: 16px;
+  }
+  .containerone select#tipo-gestion,
+  .containerone select#tipo-gestion {
+      font-size: 14px; /* Puedes ajustar el tamaño según tu preferencia */
+      border-radius: 4px;
+      padding: 7px;
+      margin-right: 8px;
+      margin-top: 2px;
+  }  
+  .containerone select#categoria,
+  .containerone select#categoria {
+      font-size: 14px; /* Puedes ajustar el tamaño según tu preferencia */
+      border-radius: 4px;
+      padding: 7px;
+      margin-right: 8px;
+      margin-top: 2px;
+  }  
+
+  /*Para dar efectos al mi perfil para que se vea bonito*/
+  body.perfil {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  .profile {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .profile p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /*Dar bonita imagen al ejemplo de los posibles resultados que puede haber*/
+/* Estilos para los elementos en cuadro, en columna y centrados */
+.centros,
+.orientador {
+  text-align: center;
+}
+
+.lista-centros,
+.lista-orientadores {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-centros li,
+.lista-orientadores li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  width: 770px;
+  border-radius:5px;
+  background-color: #ccc;
+}
